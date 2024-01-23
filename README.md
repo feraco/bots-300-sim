@@ -1,14 +1,9 @@
 Gears
 ===
-Generic Educational Autonomous Robotics Simulator
+Gears for NY Master Teacher Coding & Robotics Competition
+Educational Robotics & Coding Simulator Tailored for New York State Master Teacher Program
 
-This simulator was created to allow anyone to experiment with robotics without owning a robot.
-
-Try it out at https://gears.aposteriori.com.sg
-
-...or the latest version from github https://quirkycort.github.io/gears/public/
-
-It uses the Ev3dev api (...and some early support for Pybricks), so the code can run on an actual Lego Mindstorm EV3 if you have one.
+Gears is an innovative simulator developed to empower educators in the New York State Master Teacher Program. It's specially tailored for teaching coding and robotics, making these skills accessible to all schools.
 
 Installation
 ---
