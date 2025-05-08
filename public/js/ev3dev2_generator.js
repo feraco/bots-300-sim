@@ -900,3 +900,60 @@ var ev3dev2_generator = new function() {
   }
 }
 
+
+  // New Movement Commands generators
+  this.move_forward = function(block) {
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'move_forward(' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.move_backward = function(block) {
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'move_backward(' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.move_left = function(block) {
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'move_left(' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.move_right = function(block) {
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'move_right(' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.move_in_direction = function(block) {
+    var angle = Blockly.Python.valueToCode(block, 'ANGLE', Blockly.Python.ORDER_ATOMIC);
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'move_in_direction(' + angle + ', ' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.rotate_left = function(block) {
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'rotate_left(' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.rotate_right = function(block) {
+    var speed = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC);
+    var duration = Blockly.Python.valueToCode(block, 'DURATION', Blockly.Python.ORDER_ATOMIC);
+    var code = 'rotate_right(' + speed + ', ' + duration + ')\n';
+    return code;
+  };
+
+  this.stop_all_motors = function(block) {
+    var code = 'stop_all_motors()\n';
+    return code;
+  };
+

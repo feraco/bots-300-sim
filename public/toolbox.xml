@@ -1,5 +1,99 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="Movement" colour="#5b67a5" hidden="true">
+
+  <category name="Movement Commands" colour="#FF5722">
+    <block type="move_forward">
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">3.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="move_backward">
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">3.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="move_left">
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">2.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="move_right">
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">2.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="move_in_direction">
+      <value name="ANGLE">
+        <shadow type="math_number">
+          <field name="NUM">45</field>
+        </shadow>
+      </value>
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">2.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="rotate_left">
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">2.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="rotate_right">
+      <value name="SPEED">
+        <shadow type="math_number">
+          <field name="NUM">0.5</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number">
+          <field name="NUM">2.0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="stop_all_motors"/>
+  </category>
+
     <block type="tw_fwd"></block>
     <block type="tw_rev"></block>
     <block type="tw_left"></block>
